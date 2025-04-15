@@ -153,7 +153,7 @@ patients_data = [
 meno_najvyssieho = ""
 priezvisko_najvyssieho = ""
 vyska_najvyssieho = 0
-dfzvcbcxvgvd
+
 for patient in patients_data:
     if patient["height"] > vyska_najvyssieho:
         vyska_najvyssieho = patient["height"]
@@ -220,9 +220,95 @@ for kniha in pole_knih:
 
 
 ### ------------------------- 14 -------------------------
+
+def kalkulacka(cislo1, cislo2, operacia):
+    if operacia == "+":
+        return cislo1 + cislo2
+    elif operacia == "-":
+        return cislo1 - cislo2
+    elif operacia == "*":
+        return cislo1 * cislo2
+    elif operacia == "/":
+        if cislo2 == 0:
+            print("Neplatná operácia")
+        else:
+            return cislo1 / cislo2
+
+print(kalkulacka(2,3,"+"))
+scitanie = kalkulacka(4,5,"+")
+print(scitanie)
+
+print(kalkulacka(11,0,"/"))
+
 ### ------------------------- 15 -------------------------
+
+import random
+import time
+while True:
+    hod_kockou = random.randint(1, 6)
+    print(f"Hádžete...")
+    time.sleep(1)
+    print(f"Hodili ste: {hod_kockou}")
+    if hod_kockou == 1:
+        print("Smola!")
+        break
+    elif hod_kockou == 6:
+        print("Vyhrali ste!")
+        break
+    else:
+        odpoved = input("Smola! Chcete hádzať znovu? (y/n)")
+        if odpoved == "y":
+            continue
+        else:
+            print("Zrušili ste hru.")
+            break
+
 ### ------------------------- 16 -------------------------
+import turtle
+t = turtle.Turtle()
+t.speed(3)
+
+def stvorec(dlzka):
+    t.pensize(3)
+    t.color("blue")
+    for x in range(4):
+        t.fd(dlzka)
+        t.lt(90)
+
+def schody(dlzka):
+    for x in range(6):
+        stvorec(dlzka)
+        t.fd(dlzka)
+        t.lt(90)
+        t.fd(dlzka)
+        t.rt(90)
+
+    for x in range(6):
+        t.bk(dlzka)
+        t.lt(90)
+        t.bk(dlzka)
+        t.rt(90)
+
+schody(50)
+turtle.mainloop()
+
 ### ------------------------- 17 -------------------------
+
+def nakup():
+    nakup = []
+    celkova_suma = 0
+    while True:
+        polozka = input("Zadajte položku: ")
+        if polozka == "exit":
+            print(nakup)
+            print(celkova_suma)
+            break
+        cena = int(input("Zadajte cenu: "))
+        nakup.append(polozka)
+        celkova_suma += cena
+
+nakup()
+
 ### ------------------------- 18 -------------------------
 
 meno = input("Meno: ")
