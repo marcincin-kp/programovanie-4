@@ -153,7 +153,7 @@ patients_data = [
 meno_najvyssieho = ""
 priezvisko_najvyssieho = ""
 vyska_najvyssieho = 0
-
+dfzvcbcxvgvd
 for patient in patients_data:
     if patient["height"] > vyska_najvyssieho:
         vyska_najvyssieho = patient["height"]
