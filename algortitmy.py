@@ -1,27 +1,6 @@
 ### ------------------------- 1 -------------------------
 
-pole = [
-    "apple",
-    "42",
-    "banana",
-    "1700",
-    "car",
-    "88",
-    "dog",
-    "23",
-    "99",
-    "house",
-    "guitar",
-    "34",
-    "island",
-    "56",
-    "78",
-    "jungle",
-    "flower",
-    "65",
-    "elephant",
-    "91"
-]
+pole = ["apple", "42", "banana", "1700", "car", "88", "dog", "23", "99", "house", "guitar", "34", "island", "56", "78", "jungle", "flower", "65", "elephant", "91"]
 polec = []
 poles = []
 
@@ -123,6 +102,7 @@ while True:
         print(pole)
         break
 
+
 ### ------------------------- 8 -------------------------
 
 rok = int(input("Zadajte rok: "))
@@ -163,6 +143,19 @@ for patient in patients_data:
 print(f"Najvyšší pacient je {meno_najvyssieho} {priezvisko_najvyssieho} a je vysoký {vyska_najvyssieho}")
 
 ### ------------------------- 10 -------------------------
+
+cislo = int(input("Zadajte číslo od 1 po 100: "))
+
+for x in range(1, cislo+1):
+    if x % 3 == 0 and x % 5 == 0:
+        print("FizzBuzz")
+    elif x % 5 == 0:
+        print("Buzz")
+    elif x % 3 == 0:
+        print("Fizz")
+    else:
+        print(x)
+
 ### ------------------------- 11 -------------------------
 ### ------------------------- 12 -------------------------
 
