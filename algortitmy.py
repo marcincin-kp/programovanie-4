@@ -318,13 +318,18 @@ def nakup():
 nakup()
 
 ### ------------------------- 18 -------------------------
-
 meno = input("Meno: ")
 prezvisko = input("Prezvisko: ")
 vek = input("Vek: ")
 spolu = (f"{meno} {prezvisko} {vek}")
 print(len(spolu))
 print(spolu)
+
+pocet_a = 0
+for pes in spolu:
+    if pes == "a":
+        pocet_a += 1
+print(f"Počet a v stringu: {pocet_a}")
 
 ### ------------------------- 19 -------------------------
 
