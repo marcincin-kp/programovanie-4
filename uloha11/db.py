@@ -1,0 +1,55 @@
+doctors_data = [
+    {"doctor_id": 1, "first_name": "Alice", "last_name": "Smith", "specialization": "Cardiology", "city": "Toronto", "province_id": "ON", "age": 58, "height": 156, "weight": 90},
+    {"doctor_id": 2, "first_name": "Robert", "last_name": "Johnson", "specialization": "Pediatrics", "city": "Hamilton", "province_id": "ON", "age": 64, "height": 165, "weight": 100},
+    {"doctor_id": 3, "first_name": "Emily", "last_name": "Davis", "specialization": "Dermatology", "city": "Barrie", "province_id": "ON", "age": 49, "height": 183, "weight": 66},
+    {"doctor_id": 4, "first_name": "Michael", "last_name": "Brown", "specialization": "Neurology", "city": "Peterborough", "province_id": "ON", "age": 60, "height": 192, "weight": 98},
+    {"doctor_id": 5, "first_name": "Jessica", "last_name": "Miller", "specialization": "Orthopedics", "city": "Burlington", "province_id": "ON", "age": 62, "height": 156, "weight": 95}
+]
+
+visits_data = [
+    {"visit_id": 1, "patient_id": 1, "doctor_id": 5, "visit_date": "2021-08-24", "diagnosis": "Hypertension"},
+    {"visit_id": 2, "patient_id": 2, "doctor_id": 2, "visit_date": "2023-08-15", "diagnosis": "Healthy Checkup"},
+    {"visit_id": 3, "patient_id": 2, "doctor_id": 1, "visit_date": "2022-01-06", "diagnosis": "Flu"},
+    {"visit_id": 4, "patient_id": 3, "doctor_id": 3, "visit_date": "2023-04-13", "diagnosis": "Hypertension"},
+    {"visit_id": 5, "patient_id": 4, "doctor_id": 4, "visit_date": "2023-10-02", "diagnosis": "Healthy Checkup"},
+    {"visit_id": 6, "patient_id": 4, "doctor_id": 4, "visit_date": "2022-10-24", "diagnosis": "Back Pain"},
+    {"visit_id": 7, "patient_id": 4, "doctor_id": 4, "visit_date": "2020-12-23", "diagnosis": "Flu"},
+    {"visit_id": 8, "patient_id": 5, "doctor_id": 2, "visit_date": "2020-10-10", "diagnosis": "Diabetes"},
+    {"visit_id": 9, "patient_id": 5, "doctor_id": 2, "visit_date": "2023-07-03", "diagnosis": "Flu"},
+    {"visit_id": 10, "patient_id": 7, "doctor_id": 3, "visit_date": "2020-01-28", "diagnosis": "Back Pain"},
+    {"visit_id": 11, "patient_id": 7, "doctor_id": 1, "visit_date": "2021-06-28", "diagnosis": "Allergy"},
+    {"visit_id": 12, "patient_id": 8, "doctor_id": 1, "visit_date": "2021-02-22", "diagnosis": "Allergy"},
+    {"visit_id": 13, "patient_id": 10, "doctor_id": 5, "visit_date": "2022-04-08", "diagnosis": "Cold"},
+    {"visit_id": 14, "patient_id": 10, "doctor_id": 4, "visit_date": "2020-01-16", "diagnosis": "Migraine"},
+    {"visit_id": 15, "patient_id": 10, "doctor_id": 1, "visit_date": "2020-08-18", "diagnosis": "Healthy Checkup"},
+    {"visit_id": 16, "patient_id": 11, "doctor_id": 5, "visit_date": "2020-09-14", "diagnosis": "Migraine"},
+    {"visit_id": 17, "patient_id": 11, "doctor_id": 2, "visit_date": "2020-08-17", "diagnosis": "Allergy"},
+    {"visit_id": 18, "patient_id": 11, "doctor_id": 4, "visit_date": "2020-02-20", "diagnosis": "Hypertension"},
+    {"visit_id": 19, "patient_id": 14, "doctor_id": 2, "visit_date": "2020-10-05", "diagnosis": "Healthy Checkup"},
+    {"visit_id": 20, "patient_id": 14, "doctor_id": 4, "visit_date": "2021-06-20", "diagnosis": "Hypertension"},
+    {"visit_id": 21, "patient_id": 16, "doctor_id": 1, "visit_date": "2022-09-25", "diagnosis": "Allergy"},
+    {"visit_id": 22, "patient_id": 16, "doctor_id": 5, "visit_date": "2022-09-05", "diagnosis": "Migraine"},
+    {"visit_id": 23, "patient_id": 16, "doctor_id": 5, "visit_date": "2023-10-17", "diagnosis": "Allergy"},
+    {"visit_id": 24, "patient_id": 17, "doctor_id": 2, "visit_date": "2021-04-03", "diagnosis": "Hypertension"},
+    {"visit_id": 25, "patient_id": 19, "doctor_id": 2, "visit_date": "2023-12-16", "diagnosis": "Allergy"},
+    {"visit_id": 26, "patient_id": 20, "doctor_id": 3, "visit_date": "2022-02-26", "diagnosis": "Hypertension"},
+    {"visit_id": 27, "patient_id": 20, "doctor_id": 1, "visit_date": "2022-11-26", "diagnosis": "Flu"},
+    {"visit_id": 28, "patient_id": 20, "doctor_id": 2, "visit_date": "2022-02-04", "diagnosis": "Cold"}
+]
+
+patients_data = [
+    {"patient_id": 1, "first_name": "Donald", "last_name": "Waterfield", "gender": "M", "birth_date": "1963-02-12", "city": "Barrie", "province_id": "ON", "allergies": None, "height": 156, "weight": 65},
+    {"patient_id": 2, "first_name": "Mickey", "last_name": "Baasha", "gender": "M", "birth_date": "1981-05-28", "city": "Dundas", "province_id": "ON", "allergies": "Sulfa", "height": 185, "weight": 76},
+    {"patient_id": 3, "first_name": "Jiji", "last_name": "Sharma", "gender": "M", "birth_date": "1957-09-05", "city": "Hamilton", "province_id": "ON", "allergies": "Penicillin", "height": 194, "weight": 106},
+    {"patient_id": 4, "first_name": "Blair", "last_name": "Diaz", "gender": "M", "birth_date": "1967-01-07", "city": "Hamilton", "province_id": "ON", "allergies": None, "height": 191, "weight": 104},
+    {"patient_id": 5, "first_name": "Charles", "last_name": "Wolfe", "gender": "M", "birth_date": "2017-11-19", "city": "Orillia", "province_id": "ON", "allergies": "Penicillin", "height": 47, "weight": 10},
+    {"patient_id": 7, "first_name": "Thomas", "last_name": "ONeill", "gender": "M", "birth_date": "1993-01-31", "city": "Burlington", "province_id": "ON", "allergies": None, "height": 180, "weight": 117},
+    {"patient_id": 8, "first_name": "Sonny", "last_name": "Beckett", "gender": "M", "birth_date": "1952-12-11", "city": "Port Hawkesbury", "province_id": "NS", "allergies": None, "height": 174, "weight": 105},
+    {"patient_id": 10, "first_name": "Cedric", "last_name": "Coltrane", "gender": "M", "birth_date": "1961-11-10", "city": "Toronto", "province_id": "ON", "allergies": None, "height": 157, "weight": 61},
+    {"patient_id": 11, "first_name": "Hank", "last_name": "Spencer", "gender": "M", "birth_date": "1969-08-10", "city": "Peterborough", "province_id": "ON", "allergies": None, "height": 158, "weight": 74},
+    {"patient_id": 14, "first_name": "Rick", "last_name": "Bennett", "gender": "M", "birth_date": "1977-01-27", "city": "Ancaster", "province_id": "ON", "allergies": "Penicillin", "height": 220, "weight": 95},
+    {"patient_id": 16, "first_name": "Woody", "last_name": "Bashir", "gender": "M", "birth_date": "1951-11-15", "city": "Barrie", "province_id": "ON", "allergies": "Penicillin", "height": 153, "weight": 59},
+    {"patient_id": 17, "first_name": "Tom", "last_name": "Halliwell", "gender": "M", "birth_date": "1987-08-01", "city": "Hamilton", "province_id": "ON", "allergies": "Ragweed", "height": 179, "weight": 114},
+    {"patient_id": 19, "first_name": "John", "last_name": "West", "gender": "M", "birth_date": "1961-06-19", "city": "Oakville", "province_id": "ON", "allergies": None, "height": 138, "weight": 61},
+    {"patient_id": 20, "first_name": "Jon", "last_name": "Doggett", "gender": "M", "birth_date": "1951-12-25", "city": "Hamilton", "province_id": "ON", "allergies": None, "height": 194, "weight": 116},
+]

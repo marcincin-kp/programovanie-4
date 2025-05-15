@@ -361,7 +361,19 @@ while True:
         else:
             print(f"Počet zostávajúcich pokusov: {pocet_pokusov}")
 ### ------------------------- 21 -------------------------
+veta = input("Zadajte vetu:")
+
+for pismeno in veta:
+    if pismeno in ["e", "f", "b"]:
+        print(f"Našli sme {pismeno}")
+veta = veta.lower()
+for samohlaska in ["a","e","i","o","u","y"]:
+    veta = veta.replace(samohlaska, "")
+print(veta)
+
 ### ------------------------- 22 -------------------------
+
+
 ### ------------------------- 23 -------------------------
 ### ------------------------- 24 -------------------------
 ### ------------------------- 25 -------------------------
