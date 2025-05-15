@@ -381,6 +381,16 @@ print(veta)
 ### ------------------------- 27 -------------------------
 ### ------------------------- 28 -------------------------
 ### ------------------------- 29 -------------------------
+
+try:
+    with open("vystup.txt", "r", encoding="utf-8") as subor:
+        obsah = subor.read()
+        print(obsah)
+        print(obsah.count("\n"))
+
+except FileNotFoundError:
+    print("Súbor sa nenašiel.")
+
 ### ------------------------- 30 -------------------------
 
 
