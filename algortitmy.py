@@ -170,7 +170,7 @@ for x in range(1, cislo+1):
 
 ### ------------------------- 11 -------------------------
 
-
+# <-- pozri úlohu 11 v zložke
 
 ### ------------------------- 12 -------------------------
 
@@ -449,6 +449,21 @@ while True:
 
 turtle.mainloop()
 ### ------------------------- 28 -------------------------
+import turtle
+import random
+turtle.colormode(255)
+pero = turtle.Turtle()
+pero.speed(0)
+
+while True:
+    pero.forward(25)
+    pero.left(random.randint(1, 180))
+
+    chance = random.randint(1, 100)
+
+    if chance < 5:
+        pero.color(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+        pero.dot(random.randint(25,75))
 
 ### ------------------------- 29 -------------------------
 
@@ -463,4 +478,14 @@ except FileNotFoundError:
 
 ### ------------------------- 30 -------------------------
 
+import turtle
+pero = turtle.Turtle()
 
+for x in range(9):
+    pero.forward(100)
+    pero.dot(30, "green")
+    pero.dot(20, "blue")
+    pero.dot(10, "red")
+    pero.backward(100)
+    pero.left(22.5)
+turtle.mainloop()
