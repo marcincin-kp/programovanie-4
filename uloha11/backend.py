@@ -1,5 +1,3 @@
-from db import *
-
 def najvyssi(zoznam):
     naj_vyska = 0
     naj_clovek = {}

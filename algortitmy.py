@@ -372,14 +372,84 @@ for samohlaska in ["a","e","i","o","u","y"]:
 print(veta)
 
 ### ------------------------- 22 -------------------------
+text = input("Enter your text: ")
 
+try:
+    with open("vystup.txt", "a", encoding="utf-8") as subor:
+        subor.write(text)
+        print("Text bol vpísaný do súboru.")
+except FileNotFoundError:
+    print("Súbor sa nenašiel.")
 
 ### ------------------------- 23 -------------------------
+n = int(input("Zadajte číslo n: "))
+sucet = 0
+for i in range(n):
+    if i % 2 == 0:
+        sucet += i
+print(f"Súčet párnych čísel od 1 do {n} je: {sucet}")
 ### ------------------------- 24 -------------------------
+list = []
+while True:
+    n = int(input("Enter a number: "))
+    if n != 0:
+        list.append(n)
+    else:
+        break
+
+print(list)
+sum = sum(list)
+print(sum)
+if len(list) != 0:
+    print(sum/len(list))
 ### ------------------------- 25 -------------------------
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+multiplication = 0
+for i in range(num1):
+    multiplication += num2
+
+print(multiplication)
 ### ------------------------- 26 -------------------------
+import turtle
+pero = turtle.Turtle()
+pocet_stran = int(input("Koľko strán má tvoj viacuholník: "))
+
+for i in range(pocet_stran):
+    pero.forward(100)
+    pero.right(360/pocet_stran)
+turtle.mainloop()
 ### ------------------------- 27 -------------------------
+import turtle
+pero = turtle.Turtle()
+while True:
+    utvar = input("Zadaj útvar, ktorý chceš nakresliť: (štvorec, trojuholník, kruh)")
+
+    if utvar not in ["štvorec", "trojuholník", "kruh"]:
+        print("Neznámy tvar, skúste ešte raz.")
+        continue
+
+    os_x = int(input("Zadaj súradnicu x:"))
+    os_y = int(input("Zadaj súradnicu y:"))
+    pero.pu()
+    pero.goto(os_x, os_y)
+    pero.pd()
+
+    if utvar == "štvorec":
+        for x in range(4):
+            pero.fd(50)
+            pero.lt(90)
+    if utvar == "trojuholník":
+        for x in range(3):
+            pero.fd(50)
+            pero.lt(120)
+    if utvar == "kruh":
+        pero.circle(50)
+
+turtle.mainloop()
 ### ------------------------- 28 -------------------------
+
 ### ------------------------- 29 -------------------------
 
 try:
